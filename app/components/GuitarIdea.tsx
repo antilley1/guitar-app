@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 
 interface GuitarIdeaProps {
     title: string;
@@ -15,7 +15,9 @@ interface GuitarIdeaProps {
           <h2 className="card-title text-lg font-bold mb-2 text-center">{title}</h2>
           <p className="text-neutral-content">{description}</p>
           <p className="text-neutral-content italic">Examples: {songExamples}</p>
-          <button className="bg-primary hover:text-secondary-content hover:bg-secondary text-primary-content font-bold py-2 px-4 rounded mr-4 mb-4 self-end">Edit Idea</button>
+          <Link href={`/IdeaEditor/${title}`}>
+            <button className="bg-primary hover:text-secondary-content hover:bg-secondary text-primary-content font-bold py-2 px-4 rounded mr-4 mb-4 self-end">Edit Idea</button>
+          </Link>
         </div>
         
       </div>
