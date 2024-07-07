@@ -1,3 +1,5 @@
+
+
 interface GuitarIdeaProps {
     title: string;
     description: string;
@@ -8,10 +10,15 @@ interface GuitarIdeaProps {
   
   export default function GuitarIdea({ title, description, songExamples }: GuitarIdeaProps) {
     return (
-      <div className="border border-gray-300 p-4 rounded-lg">
-        <h3 className="text-lg font-bold mb-2 text-center">{title}</h3>
-        <p className="text-700">{description}</p>
-        <p className="text-700 italic">Examples: {songExamples}</p>
+      <div className="card bg-neutral text-neutral-content p-4 rounded-lg mb-4">
+        <div className="card-body">
+          <h2 className="card-title text-lg font-bold mb-2 text-center">{title}</h2>
+          <p className="text-neutral-content">{description}</p>
+          <p className="text-neutral-content italic">Examples: {songExamples}</p>
+          <button className="bg-primary hover:text-secondary-content hover:bg-secondary text-primary-content font-bold py-2 px-4 rounded mr-4 mb-4 self-end">Edit Idea</button>
+        </div>
+        
       </div>
+
     );
   }

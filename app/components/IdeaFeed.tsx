@@ -10,7 +10,18 @@ export default function IdeaFeed() {
       {
         title: "Third string major chord bend", 
         description: "Bending the G string up a whole step to create a major chord with the 1st and 2nd strings",
-        songExamples: ["The Housefire"]}, 
+        songExamples: ["The Housefire"]
+      }, 
+      {
+        title: "Third string major chord bend", 
+        description: "Bending the G string up a whole step to create a major chord with the 1st and 2nd strings",
+        songExamples: ["The Housefire"]
+      }, 
+      {
+        title: "Third string major chord bend", 
+        description: "Bending the G string up a whole step to create a major chord with the 1st and 2nd strings",
+        songExamples: ["The Housefire"]
+      }, 
     ];
   
     return (

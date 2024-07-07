@@ -1,11 +1,21 @@
 import IdeaFeed from "./IdeaFeed";
+import SideBar from "./SideBar";
 
 export function IdeaFeedContainer() {
     return (
-        <div className="w-full max-w-5xl rounded-lg border border-gray-300 p-4 flex flex-col justify-between h-full">
-          <div className="text-xl font-bold mb-4 text-center">Ideas</div>
-          <IdeaFeed ></IdeaFeed>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end mr-4 mb-4">Add Idea</button>
+        <div className="w-full max-w-5xl rounded-lg p-4 flex flex-col justify-between h-full text-base-content">
+          
+          <div className="flex flex-row justify-between">
+            <div>
+              <div className="text-xl font-bold mb-4 text-center">Ideas</div>
+              <IdeaFeed></IdeaFeed>
+            </div>
+            <div className="flex flex-col">
+              <button className="bg-primary hover:text-accent-content hover:bg-accent text-primary-content font-bold py-2 px-4 rounded mr-4 mb-4 w-full">Add Idea</button>
+              <SideBar></SideBar>
+            </div>
+          </div>
+          
         </div>
     );
 }
