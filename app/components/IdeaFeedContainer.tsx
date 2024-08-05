@@ -6,7 +6,6 @@ import Link from "next/link";
 export function IdeaFeedContainer() {
     return (
         <div className="w-full max-w-5xl rounded-lg p-4 flex flex-col justify-between h-full text-base-content">
-          
           <div className="flex flex-row justify-between">
             <div>
               <div className="text-xl font-bold mb-4 text-center">Ideas</div>
@@ -19,7 +18,6 @@ export function IdeaFeedContainer() {
               <SideBar></SideBar>
             </div>
           </div>
-          
         </div>
     );
 }
