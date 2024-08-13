@@ -1,3 +1,15 @@
+# What is this?
+This is a personal project I'm creating to practice React.
+
+# What I'm using
+- React / Next.js
+- Daisyui
+
+# Standard Next.js README
+Keeping below for now
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
