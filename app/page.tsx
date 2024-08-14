@@ -1,3 +1,5 @@
+'use client';
+
 import { IdeaFeedContainer } from "./components/IdeaFeedContainer";
 
 export default function Home() {
